@@ -1,0 +1,50 @@
+<div class="row">
+    <div class="col-6">
+        <p>***********One way Binding**************</p>
+        <br>
+        1.Interpolation
+        <p>{{firstName}}</p>
+        <div>
+            {{rollNo}}
+        </div>
+        <span>{{isActive}}</span>
+    </div>
+    <div class="col-6">
+        <p>***********Proprty Binding**************</p>
+        <input type="text" [value]="firstName" name="" id="">
+        <br>
+        <input type="text" [placeholder]="myPlaceHolder" name="" id="">
+        <br>
+        <div [className]="div1ClassName" style="width: 100px; height: 100px;">
+
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-3">
+        <button class="btn btn-success" (click)="showWelcomeMessage()">ShowMessage</button>
+    </div>
+    <div class="col-3">
+        <select (change)="onCityChange()">
+            <option value="Tandag">Tandag</option>
+            <option value="Bislig">Bislig</option>
+            <option value="Davao">Davao</option>
+            <option value="Cebu">Cebu</option>
+        </select>
+    </div>
+    <div class="row">
+        <div class="col-3">
+            <p>***********Two way data Binding**************</p>
+            <input type="text" [(ngModel)]="firstName">
+        </div>
+        <div class="col-3">
+            <select [(ngModel)]="selectedCity">
+                <option value="Tandag">Tandag</option>
+                <option value="Bislig">Bislig</option>
+                <option value="Davao">Davao</option>
+                <option value="Cebu">Cebu</option>
+            </select>
+            -{{selectedCity}}
+        </div>
+    </div>
+</div>
