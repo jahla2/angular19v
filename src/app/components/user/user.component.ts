@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Route, Router } from '@angular/router';
 
 @Component({
   selector: 'app-user',
@@ -8,4 +9,13 @@ import { Component } from '@angular/core';
 })
 export class UserComponent {
 
+  constructor(private router: Router) {}
+
+  navigateToAdmin() {
+    this.router.navigateByUrl('/admin');
+  }
+
 }
+
+
+
