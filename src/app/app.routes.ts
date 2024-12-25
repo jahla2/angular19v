@@ -3,7 +3,8 @@ import { UserComponent } from './components/user/user.component';
 import { AdminComponent } from './components/admin/admin.component';
 import { DataBindingComponent } from './components/data-binding/data-binding.component';
 import { NgClassComponent } from './components/ng-class/ng-class.component';
-import { TemplateFormComponent } from './components/template-form/template-form.component';
+import { TemplateFormComponent } from './components/Forms/template-form/template-form.component';
+import { ReactiveFormsComponent } from './components/Forms/reactive-forms/reactive-forms.component';
 
 export const routes: Routes = [
     {
@@ -31,5 +32,9 @@ export const routes: Routes = [
     {
         path: 'template-form',
         component: TemplateFormComponent
+    },
+    {
+        path: 'reactive-form',
+        component: ReactiveFormsComponent
     }
 ];
